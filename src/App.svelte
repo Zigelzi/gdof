@@ -4,25 +4,20 @@
 </script>
 
 <main>
-  <div>
-    <h1>Game Designers of Finland</h1>
+  <section id="landing-page">
+    <header class="primary-header">
+      <h1 class="">Game Designers of Finland</h1>
+    </header>
+    
     <p>Learn and participate to thought provoking events about game design</p>
+  </section>
+  <div>
+    
   </div>
 </main>
 
 <style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
-  }
+.primary-header {
+  display: flex;
+}
 </style>
