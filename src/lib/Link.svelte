@@ -9,5 +9,10 @@
 .btn-primary {
     background-color: var(--bg-btn);
     text-decoration: none;
+    transition: background-color .2s;
+}
+
+.btn-primary:hover {
+    background-color: var(--bg-btn-hover);
 }
 </style>

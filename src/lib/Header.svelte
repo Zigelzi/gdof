@@ -1,4 +1,4 @@
-<header class="primary-header ph-s pv-m">
+<header class="primary-header p-m">
 <h1 class="fw-bold fs-tetriary-heading">Game Designers of Finland</h1>
 </header>
 

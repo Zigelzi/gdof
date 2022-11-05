@@ -59,6 +59,7 @@
   --bg-secondary-100: var(--blue-100);
   --bg-footer: var(--blue-700);
   --bg-btn: var(--blue-500);
+  --bg-btn-hover: var(--blue-600);
 
   --p-xs: 5px;
   --p-s: 10px;
