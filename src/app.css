@@ -1,7 +1,6 @@
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
   font-weight: 400;
 
   --green-100: #F6FEE6;
@@ -36,7 +35,7 @@
 
   --fs-400: 0.875rem;
   --fs-500: 1rem;
-  --fs-600: 1,3125rem;
+  --fs-600: 1.3125rem;
   --fs-700: 1.875rem;
   --fs-800: 2.5rem;
   --fs-900: 3.5rem;
@@ -59,6 +58,19 @@
   --bg-primary-100: var(--grey-100);
   --bg-secondary-100: var(--blue-100);
   --bg-footer: var(--blue-700);
+  --bg-btn: var(--blue-500);
+
+  --p-xs: 5px;
+  --p-s: 10px;
+  --p-m: 20px;
+  --p-l: 35px;
+  --p-xxl: 100px;
+
+  --mg-xs: 5px;
+  --mg-s: 10px;
+  --mg-m: 20px;
+  --mg-l: 35px;
+  --mg-xxl: 100px;
 
   color-scheme: light dark;
   color: var(--grey-600);
@@ -90,7 +102,7 @@ Slighly modified CSS reset by https: //piccalil.li/blog/a-modern-css-reset
   box-sizing: border-box;
 }
 
-/* Remove default margin */
+/* Remove default margin, padding and force inherited font */
 * {
   margin: 0;
   padding: 0;
@@ -127,6 +139,10 @@ h4,
 h5,
 h6 {
   font-family: var(--ff-heading);
+}
+
+p {
+  line-height: 1.75;
 }
 
 /* A elements that don't have a class get default styles */
@@ -171,7 +187,6 @@ Start of project specific styling.
 ----------- */
 #app {
   max-width: 1280px;
-  margin: 0 auto;
 }
 
 /* Text utility classes */
@@ -216,16 +231,126 @@ Start of project specific styling.
 /* Font size utility classes */
 .fs-primary-heading {
   font-size: var(--fs-primary-heading);
+  line-height: 1.25;
 }
 
 .fs-secondary-heading {
   font-size: var(--fs-secondary-heading);
+  line-height: 1.25;
 }
 
-.fs-tertriary-heading {
+.fs-tetriary-heading {
   font-size: var(--fs-tetriary-heading);
+  line-height: 1.25;
 }
 
 .fs-link {
   font-size: var(--fs-link);
+}
+
+/* Padding and margin utility classes */
+.p-xs {
+  padding: var(--p-xs);
+}
+
+.p-s {
+  padding: var(--p-s);
+}
+
+.p-m {
+  padding: var(--p-m);
+}
+
+.p-l {
+  padding: var(--p-l);
+}
+
+.ph-xs {
+  padding-left: var(--p-xs);
+  padding-right: var(--p-xs);
+}
+
+.ph-s {
+  padding-left: var(--p-s);
+  padding-right: var(--p-s);
+}
+
+.ph-m {
+  padding-left: var(--p-m);
+  padding-right: var(--p-m);
+}
+
+.ph-l {
+  padding-left: var(--p-l);
+  padding-right: var(--p-l);
+}
+
+
+.pv-xs {
+  padding-top: var(--p-xs);
+  padding-bottom: var(--p-xs);
+}
+
+.pv-s {
+  padding-top: var(--p-s);
+  padding-bottom: var(--p-s);
+}
+
+.pv-m {
+  padding-top: var(--p-m);
+  padding-bottom: var(--p-m);
+}
+
+.pv-l {
+  padding-top: var(--p-l);
+  padding-bottom: var(--p-l);
+}
+
+.pt-xxl {
+  padding-top: var(--p-xxl);
+}
+
+.mt-xs {
+  margin-top: var(--mg-xs);
+}
+
+.mt-s {
+  margin-top: var(--mg-s);
+}
+
+.mt-m {
+  margin-top: var(--mg-m);
+}
+
+.mt-l {
+  margin-top: var(--mg-l);
+}
+
+.mv-xs {
+  margin-top: var(--mg-xs);
+  margin-bottom: var(--mg-xs);
+}
+
+.mv-s {
+  margin-top: var(--mg-s);
+  margin-bottom: var(--mg-s);
+}
+
+.mv-m {
+  margin-top: var(--mg-m);
+  margin-bottom: var(--mg-m);
+}
+
+.mv-l {
+  margin-top: var(--mg-l);
+  margin-bottom: var(--mg-l);
+}
+
+/* Borders */
+.r-10 {
+  border-radius: 10px;
+}
+
+.r-20 {
+  border-radius: 20px;
 }

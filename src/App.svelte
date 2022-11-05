@@ -1,23 +1,28 @@
 <script>
   import svelteLogo from './assets/svelte.svg'
   import Counter from './lib/Counter.svelte'
+  import Header from './lib/Header.svelte';
+  import Link from './lib/Link.svelte';
 </script>
 
+<Header />
 <main>
-  <section id="landing-page">
-    <header class="primary-header">
-      <h1 class="">Game Designers of Finland</h1>
-    </header>
-    
-    <p>Learn and participate to thought provoking events about game design</p>
+  <section id="landing-page" class="ph-s">
+    <p class="fw-bold fs-secondary-heading" >Learn and ask the questions about game design that you always wanted to.</p>
+    <p class="pv-m">Join meetups and community of professional and aspiring professional game designers in Finland. Find new friends and have thought provoking discussiong with fellow game design enthusiasts.</p>
+    <div class="mt-m">
+      <Link link="https://www.meetup.com/game-designers-finland/" text="Attend next event" />
+    </div>
   </section>
-  <div>
-    
-  </div>
+  <section class="r-20 bg-secondary-100 ph-s pv-m">
+    <h2 class="fs-tetriary-heading" >Next event</h2>
+
+  </section>
 </main>
 
 <style>
-.primary-header {
-  display: flex;
+#landing-page {
+  height: 90vh;
+  margin-top: 20%;
 }
 </style>
