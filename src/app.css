@@ -57,6 +57,8 @@
 
   --bg-primary-100: var(--grey-100);
   --bg-secondary-100: var(--blue-100);
+  --bg-secondary-700: var(--blue-700);
+
   --bg-footer: var(--blue-700);
   --bg-btn: var(--blue-500);
   --bg-btn-hover: var(--blue-600);
@@ -146,6 +148,10 @@ p {
   line-height: 1.75;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -211,6 +217,10 @@ Start of project specific styling.
   color: var(--fc-accent-500);
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* Background color utility classes */
 .bg-primary-100 {
   background-color: var(--bg-primary-100);
@@ -218,6 +228,10 @@ Start of project specific styling.
 
 .bg-secondary-100 {
   background-color: var(--bg-secondary-100);
+}
+
+.bg-secondary-700 {
+  background-color: var(--bg-secondary-700);
 }
 
 /* Font weight utility classes*/
@@ -249,7 +263,7 @@ Start of project specific styling.
   font-size: var(--fs-link);
 }
 
-/* Padding and margin utility classes */
+/* Padding utility classes */
 .p-xs {
   padding: var(--p-xs);
 }
@@ -307,9 +321,47 @@ Start of project specific styling.
   padding-bottom: var(--p-l);
 }
 
+.pt-xs {
+  padding-top: var(--p-xs);
+}
+
+.pt-s {
+  padding-top: var(--p-s);
+}
+
+.pt-m {
+  padding-top: var(--p-m);
+}
+
+.pt-l {
+  padding-top: var(--p-l);
+}
+
 .pt-xxl {
   padding-top: var(--p-xxl);
 }
+
+.pb-xs {
+  padding-bottom: var(--p-xs);
+}
+
+.pb-s {
+  padding-bottom: var(--p-s);
+}
+
+.pb-m {
+  padding-bottom: var(--p-m);
+}
+
+.pb-l {
+  padding-bottom: var(--p-l);
+}
+
+.pb-xxl {
+  padding-bottom: var(--p-xxl);
+}
+
+/* Margin utility classes*/
 
 .mt-xs {
   margin-top: var(--mg-xs);
@@ -325,6 +377,70 @@ Start of project specific styling.
 
 .mt-l {
   margin-top: var(--mg-l);
+}
+
+.mt-xxl {
+  margin-top: var(--mg-xxl);
+}
+
+.mb-xs {
+  margin-bottom: var(--mg-xs);
+}
+
+.mb-s {
+  margin-bottom: var(--mg-s);
+}
+
+.mb-m {
+  margin-bottom: var(--mg-m);
+}
+
+.mb-l {
+  margin-bottom: var(--mg-l);
+}
+
+.mb-xxl {
+  margin-bottom: var(--mg-xxl);
+}
+
+.ml-xs {
+  margin-left: var(--mg-xs);
+}
+
+.ml-s {
+  margin-left: var(--mg-s);
+}
+
+.ml-m {
+  margin-left: var(--mg-m);
+}
+
+.ml-l {
+  margin-left: var(--mg-l);
+}
+
+.ml-xxl {
+  margin-left: var(--mg-xxl);
+}
+
+.mr-xs {
+  margin-right: var(--mg-xs);
+}
+
+.mr-s {
+  margin-right: var(--mg-s);
+}
+
+.mr-m {
+  margin-right: var(--mg-m);
+}
+
+.mr-l {
+  margin-right: var(--mg-l);
+}
+
+.mr-xxl {
+  margin-right: var(--mg-xxl);
 }
 
 .mv-xs {
@@ -347,6 +463,11 @@ Start of project specific styling.
   margin-bottom: var(--mg-l);
 }
 
+.mv-xxl {
+  margin-top: var(--mg-xxl);
+  margin-bottom: var(--mg-xxl);
+}
+
 /* Borders */
 .r-10 {
   border-radius: 10px;
@@ -354,4 +475,19 @@ Start of project specific styling.
 
 .r-20 {
   border-radius: 20px;
+}
+
+.border-top-primary-300 {
+  border-top: 1px solid var(--grey-300);
+}
+
+/* Images */
+.img-s {
+  max-width: 80px;
+}
+
+/* Flex and grid classes */
+.flex-1 {
+  display:flex;
+  flex: 1;
 }

@@ -19,6 +19,6 @@
     </div>
     <p>{event.description}</p>
     <div class="pv-m">
-        <Link link="https://www.meetup.com/game-designers-finland/" text="Attend" />
+        <Link link="https://www.meetup.com/game-designers-finland/" isButton={true}>Attend</Link>
     </div>
 </div>

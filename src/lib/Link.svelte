@@ -1,14 +1,17 @@
 <script>
     export let link;
-    export let text;
+    export let isButton = false;
+    export let isBold = false;
 </script>
 
-<a href="{link}" class="ph-m pv-s fw-bold fs-link text-primary-100 r-10 btn-primary">{text}</a>
-
+{#if isButton}
+<a href="{link}" class="ph-m pv-s fw-bold fs-link text-primary-100 r-10 btn-primary"><slot /></a>
+{:else}
+<a href="{link}" class="pv-s fs-link text-accent-500 link-primary" class:fw-bold={isBold}><slot /></a>
+{/if}
 <style>
 .btn-primary {
     background-color: var(--bg-btn);
-    text-decoration: none;
     transition: background-color .2s;
 }
 
