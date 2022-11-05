@@ -1,6 +1,4 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import Counter from './lib/Counter.svelte'
   import Footer from './lib/Footer.svelte';
   import Header from './lib/Header.svelte';
   import Link from './lib/Link.svelte';
@@ -57,11 +55,11 @@
     <p>If you enjoy making games, want to share your experiences about solving game design problems or get help and new ideas how to tackle your current design challenges, you’re in the right place!</p>
     <div>
       <div class="flex-1 mt-xxl">
-        <img src="/src/assets/logo_discord.png" alt="Discord logo" class="img-s">
+        <img src="./images/logo_discord.png" alt="Discord logo" class="img-s">
         <p class="ml-m"><Link link="_blank">Join our Discord</Link> to discuss about game design.</p>
       </div>
       <div class="flex-1 mt-m">
-        <img src="/src/assets/logo_meetup.png" alt="Discord logo" class="img-s">
+        <img src="./images/logo_meetup.png" alt="Discord logo" class="img-s">
         <p class="ml-m"><Link link="https://www.meetup.com/game-designers-finland/">Join our Meetup group</Link> to keep up to date about our upcoming and past events.</p>
       </div>
     </div>
