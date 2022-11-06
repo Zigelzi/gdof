@@ -44,16 +44,21 @@
   --fs-button: var(--fs-400);
   --fs-link: var(--fs-400);
 
-  --fs-primary-heading: var(--fs-800);
-  --fs-secondary-heading: var(--fs-700);
-  --fs-tetriary-heading: var(--fs-600);
+  --fs-heading-xl: var(--fs-800);
+  --fs-heading-l: var(--fs-700);
+  --fs-heading-m: var(--fs-600);
 
-  --fc-primary-100: var(--grey-100);
-  --fc-primary-400: var(--grey-400);
-  --fc-primary-600: var(--grey-600);
+  --fc-heading-xl: var(--grey-600);
+  --fc-heading-l: var(--grey-600);
+  --fc-heading-m: var(--grey-600);
+
+  --fc-grey-100: var(--grey-100);
+  --fc-grey-400: var(--grey-400);
+  --fc-grey-600: var(--grey-600);
 
   --fc-accent-400: var(--blue-400);
   --fc-accent-500: var(--blue-500);
+  --fc-accent-600: var(--blue-600);
 
   --bg-primary-100: var(--grey-100);
   --bg-secondary-100: var(--blue-100);
@@ -75,6 +80,8 @@
   --mg-l: 35px;
   --mg-xxl: 100px;
 
+  --img-s: 80px;
+
   color-scheme: light dark;
   color: var(--grey-600);
   background-color: var(--grey-100);
@@ -88,9 +95,9 @@
 
 @media(min-width: 50em) {
   :root {
-    --fs-primary-heading: var(--fs-900);
-    --fs-secondary-heading: var(--fs-800);
-    --fs-tetriary-heading: var(--fs-700);
+    --fs-heading-xl: var(--fs-900);
+    --fs-heading-l: var(--fs-800);
+    --fs-heading-m: var(--fs-700);
   }
 }
 
@@ -192,22 +199,40 @@ select {
 OWN STYLES
 Start of project specific styling.
 ----------- */
-#app {
+.container {
   max-width: 1280px;
   margin: 0 auto;
 }
 
 /* Text utility classes */
-.text-primary-100 {
-  color: var(--fc-primary-100);
+.text-heading-xl {
+  font-size: var(--fs-heading-xl);
+  font-weight: var(--fw-bold);
+  color: var(--fc-heading-xl);
 }
 
-.text-primary-400 {
-  color: var(--fc-primary-400);
+.text-heading-l {
+  font-size: var(--fs-heading-l);
+  font-weight: var(--fw-bold);
+  color: var(--fc-heading-l);
 }
 
-.text-primary-600 {
-  color: var(--fc-primary-600);
+.text-heading-m {
+  font-size: var(--fs-heading-m);
+  font-weight: var(--fw-regular);
+  color: var(--fc-heading-m);
+}
+
+.text-grey-100 {
+  color: var(--fc-grey-100);
+}
+
+.text-grey-400 {
+  color: var(--fc-grey-400);
+}
+
+.text-grey-600 {
+  color: var(--fc-grey-600);
 }
 
 .text-accent-400 {
@@ -216,6 +241,10 @@ Start of project specific styling.
 
 .text-accent-500 {
   color: var(--fc-accent-500);
+}
+
+.text-accent-600 {
+  color: var(--fc-accent-600);
 }
 
 .text-center {
@@ -245,18 +274,18 @@ Start of project specific styling.
 }
 
 /* Font size utility classes */
-.fs-primary-heading {
-  font-size: var(--fs-primary-heading);
+.fs-heading-xl {
+  font-size: var(--fs-heading-xl);
   line-height: 1.25;
 }
 
-.fs-secondary-heading {
-  font-size: var(--fs-secondary-heading);
+.fs-heading-l {
+  font-size: var(--fs-heading-l);
   line-height: 1.25;
 }
 
-.fs-tetriary-heading {
-  font-size: var(--fs-tetriary-heading);
+.fs-heading-m {
+  font-size: var(--fs-heading-m);
   line-height: 1.25;
 }
 
@@ -484,11 +513,15 @@ Start of project specific styling.
 
 /* Images */
 .img-s {
-  max-width: 80px;
+  max-width: var(--img-s);
+  max-height: var(--img-s);
 }
 
 /* Flex and grid classes */
-.flex-1 {
+.flex {
   display:flex;
-  flex: 1;
+}
+
+.flex-align-center {
+  align-items: center;
 }

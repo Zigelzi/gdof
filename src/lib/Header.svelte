@@ -1,9 +1,15 @@
 <header class="primary-header p-m">
-<h1 class="fw-bold fs-tetriary-heading">Game Designers of Finland</h1>
+  <div class="container header-full-width">
+    <h1 class="fw-bold fs-heading-m">Game Designers of Finland</h1>
+  </div>
 </header>
 
 <style>
 .primary-header {
   display: flex;
+}
+
+.header-full-width {
+  width: 100%;
 }
 </style>
