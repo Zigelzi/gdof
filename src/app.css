@@ -517,6 +517,20 @@ Start of project specific styling.
   max-height: var(--img-s);
 }
 
+.img-bg-cover {
+  background-size: cover;
+}
+
+.img-bg-center {
+  background-position: center;
+}
+
+
+
+.img-v-l {
+  min-height: 30rem;
+}
+
 /* Flex and grid classes */
 .flex {
   display:flex;
@@ -524,4 +538,8 @@ Start of project specific styling.
 
 .flex-align-center {
   align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }

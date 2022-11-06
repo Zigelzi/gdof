@@ -47,6 +47,7 @@
       <NextEvent />
     </div>
   </section>
+  <div class="img-v-l img-bg-cover img-bg-center" style="background-image: url(./images/gdof_monetisation.webp)" />
   <section class="ph-m pv-l">
     <div class="container">
       <h2 class="text-heading-m">Past events</h2>
